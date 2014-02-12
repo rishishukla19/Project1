@@ -1,0 +1,43 @@
+//code in javascript
+
+var num=100;
+
+for (var i=1; i <=num; i++)
+{
+    if((i%3 === 0) && (i%5===0))
+    {
+        console.log ("fizbuzz");
+    }
+    
+    else if (i%3 === 0)
+    {
+        console.log("fizz");
+    }
+    
+    else if (i%5 === 0)
+    {
+        console.log ("buzz");
+    }
+    
+    else
+    {
+        console.log (i);
+    }
+
+}
+
+
+
+//code in haskell
+
+fizzbuzz :: Int -> String
+fizzbuzz n = if n == 1
+              then show n
+            else
+              fizbuzz (n-1) ++ " " ++
+                      if n 'mod' 3==0 && n 'mod' 5==0 then "fizzbuzz"
+                      else if n 'mod' 3 == 0 then "fizz"
+                      else if n 'mod' 5 == 0 then "buzz"
+                      else show n
+                      
+                      
